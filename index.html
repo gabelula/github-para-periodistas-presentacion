@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>GitHub para Periodistas</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Presentación en español sobre git, github y control de versiones para periodistas o interesados en periodismo de datos.">
+		<meta name="author" content="Gabriela Rodriguez">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -43,314 +43,376 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+					<h1>GitHub para Periodistas</h1>
+					<h3>¿Control de Versiones?</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>Presentación por <a href="http://gaba.stayover.org">Gabriela "Gaba" Rodriguez</a> / <a href="http://twitter.com/gaba">@gaba</a> / <a href="http://www.opennews.org">Open News Fellow 2014</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Heads Up</h2>
+					<h2>Control de Versiones</h2>
 					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
+						¿Por qué nos sirve software que maneje versiones?
 					</p>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						Sistema que registra los cambios realizados a un archivo a lo largo del tiempo. Te ayuda a recuperar archivos perdidos, a  ir versiones anteriores del archivo, a encontrar en que momento se introdujo un bug en el software, a unir diferentes versiones de un documento de forma más naturalizada.  GIT es un software de control de versiones que se realizo para guardar los cambios al corazón de Linux. Hay otros softwares que se usaban antes como SVN o CVS. Actualmente también se usan Bazaar o Mercurial.
 					</aside>
 				</section>
 
-				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
+						<h2>¿Por que Git?</h2>
+					</section>
+					<section>
+						<h2>Guarda fotos, no diferencias</h2>
+						<p>Git almacena la información como instantáneas del proyecto a lo largo del tiempo.</p>
+					  <img width="178" height="238" src="images/git_versiones.png" alt="GIT Versiones">
+					</section>
+					<aside class="notes">Ayuda a recuperar archivos perdidos. Cada foto de la situación de los archivos es el conjunto de archivos en un momento del tiempo. Esto hace que GIT sea un mini-sistema de archivos con muchas herramientas potentes construidas sobre él.</aside>
+					<section>
+						<h2>Funciona casi exclusivamente localmente</h2>
+						<p>No necesitamos un servidor para trabajar con GIT</p>
+					</section>
+					<aside class="notes">La mayoría de las operaciones en Git sólo necesitan archivos y recursos locales para operar. Se puede ver la historia de cambios en GIT sin ir a ningún servidor remoto. </aside>
+					<section>
+						<h2>Integridad</h2>
+						<p>GIT esta observandolo todo</p>
+					</section>
+					<aside class="notes">Es imposible cambiar un archivo sin que GIT lo sepa.</aside>
+					<section>
+						<h2>GIT siempre añade información</h2>
+						<p>Todo es recuperable</p>
+					</section>
+					<aside class="notes">Cuando realizas acciones en Git, casi todas ellas sólo añaden información a la base de datos de Git. Es muy difícil conseguir que el sistema haga algo que no se pueda deshacer, o que de algún modo borre información.</aside>
+				</section>
+
+				<section>
+						<h2>¿Por que GitHub?</h2>
+						<ol>
+							<li>Red social</li>
+							<li>Colaboración con periodistas y programadores</li>
+							<li>Guardar datos, mapas y código propio</li>
+						</ol>
+				</section>
+				<aside class="notes">Github es una red social, donde tu puedes subir tu repositorio publico o privado (mediante planes de suscripción), puedes enviar modificaciones a repositorios de otra gente, reportar problemas o nuevos requerimientos a otros repositorios, crear organizaciones y mucho más.
+					Ir a la página de GitHub y explicar un poco la interfase (fork, pull requests, organizations, colaboradores).
+			</aside>
+				<section>
+					<section>
+						<h2>¿Por que para un periodista?</h2>
 						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
+							colaboración en articulos, datos, proyectos
 						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+					</section>
+					<aside class="notes">Para periodistas, Github es un lugar donde guardar datos, mapas y código que puedan generar para sus propios proyectos. También es un lugar donde se puede colaborar con otros periodistas y/o programadores.</aside>
+					<section>
+						<h2>VozData en La Nacion</h2>
+						<ol>
+							<li>potencio la colaboración entre programadores</li>
+							<li>llevo control de los nuevos requerimientos y bugs</li>
+						</ol>
+					</section>
+					<aside class="notes">Mostrar proyecto en GitHub</aside>
+					<section>
+						<h2>Edición Colaborativa de un articulo</h2>
+						<p><a href="http://www.wired.com/2012/02/github-revisited/">Wired</a> publico <a href="https://github.com/WiredEnterprise/Lord-of-the-Files">un articulo</a> sobre GitHub desde GitHub.</p>
+					</section>
+					<aside class="notes">
+						Traducciones, pull requests sobre cambios.
+					</aside>
+					<section>
+						<h2>Publicar tutoriales</h2>
+						<p>Repositorio de manuales técnicos para periodistas. Como por ejemplo "<a href="https://github.com/ireapps/first-news-app">Como construir tu primera aplicación de noticias</a>"(en ingles) o "<a href="https://github.com/gabelula/github-para-periodistas">GitHub para periodistas</a>".</p>
+					</section>
+					<aside class="notes">Pueden "forkear" ese repositorio y hacerle cambios.</aside>
+					<section>
+						<h2>Publicar tu página web</h2>
+						<p>GitHub Pages con Jekyll</p>
+					</section>
+					<aside class="notes">GitHub Pages es una facilidad de GitHub en donde cualquiera puede publicar páginas webs en GitHub. Soporta Jekyll que es un generador de páginas estaticas.</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>Conceptos Basicos</h2>
+						<p></p>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
+						<h2>Los tres estados</h2>
+						<p> Git tiene tres estados principales en los que se pueden encontrar tus archivos
+							<ol>
+								<li>confirmado (committed)</li>
+								<li>modificado (modified)</li>
+								<li>preparado  (staged)</li>
+							</p>
 					</section>
+					<aside class="notes">Confirmado significa que los datos están almacenados de manera segura en tu base de datos local.
+						Modificado significa que has modificado el archivo pero todavía no lo has confirmado a tu base de datos.
+						Preparado significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima confirmación.</aside>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
+						<h2>Las tres secciones principales para un proyecto en GIT</h2>
+							<ol>
+								<li>directorio de GIT</li>
+								<li>directorio de trabajo</li>
+								<li>área de preparación</li>
+							</ol>
+						<img src="images/tres_estados.png" style="float:right;">
 					</section>
+					<aside class="notes">Directorio de Git: es donde git almacena los metadatos y la base de datos de objectos del proyecto.
+
+Directorio de trabajo: es la copia de una versión del proyecto. Es la versión que se puede modificar o usar.
+
+Área de preparación: es un archivo que almacena información de lo que va a ir en la próxima confirmación.</aside>
 					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<h2>Flujo de trabajo</h2>
+						<ol style="list-style-type: decimal;">
+							<li>Se modifica archivos en tu directorio de trabajo.</li>
+							<li>Se añaden los archivos al área de preparación.</li>
+							<li>Se confirman los cambios, que lo que hace es tomar los archivos del área de preparación y los almacena de forma permanente en el directorio de Git.</li>
+						</ol>
 					</section>
+					<aside class="notes"></aside>
+					<section>
+						<h2>Repositorio</h2>
+						<p>Se le llama al conjunto/sistema de archivos que se estan guardando en el proyecto.</p>
+					</section>
+					<aside class="notes">Hay archivos que estan y hay otros que se pueden excluir de guardarlos en el repositorio. Esto se hace incluyendo el nombre del archivo a un archivo .gitignore
+						Poner ejemplos desde github.
+					</aside>
+					<section>
+						<h2>Clonar</h2>
+						<p>Copia un repositorio remoto en el disco local.</p>
+					</section>
+					<aside class="notes"></aside>
+					<section>
+						<h2>Fork</h2>
+						<p>Es un termino usado en GitHub para crear una copia (en github) de un repositorio de otra persona u organización. Esto se hace para colaborar sobre un proyecto ya existente o usar ese repositorio como base de tu propio proyecto.</p>
+					</section>
+					<aside class="notes"></aside>
+					<section>
+						<h2>Push y Pull</h2>
+						<p>Cuando se hacen cambios localmente y se quieren enviar a GitHub (u otro repositorio remoto) se hace "un push" para empujar esos cambios al remoto.</p>
+						<p>Cuando se quieren traer cambios desde un repositorio remoto se hace "un pull" para tomar los cambios hacia el local.</p>
+					</section>
+					<aside class="notes"></aside>
+					<section>
+						<h2>Branches</h2>
+						<p>Branches(ramas) permite hacer cambios y experimentar con tu repositorio sin afectar tu proyecto. Se pueden crear ramas de diferentes caminos que tu repositorio pueda tomar. Esas ramas se pueden unir en git luego si asi se quiere.</p>
+					</section>
+					<aside class="notes"></aside>
+					<section>
+						<h2>Pull Request</h2>
+						<p>Se usa en GitHub para hacer pedidos a un proyecto forkeado de que una los cambios que hiciste en tu repositorio.</p>
+					</section>
+					<aside class="notes">Explicar mostrando interface en github.</aside>
 				</section>
 
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
+					<h2>Como instalar Git</h2>
 					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
+						<li>En Mac <a href="http://code.google.com/p/git-osx-installer">instalador</a>.</li>
+						<li>En Windows <a href="http://msysgit.github.com/">instalador</a>.</li>
+						<li>En Linux mediante manejador de paquetes: apt-get install git.</li>
 					</ol>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
 				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
+						<section>
+						<h2>LA linea de comandos</h2>
 						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
+							Software que tiene una pantalla donde se pueden tipear comandos para que la computadora realize diferentes tareas.
 						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
 						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
+							<li>En Mac: application Terminal</li>
+							<li>En Windows: <a href="http://cygwin.com/install.html">instalar cygwin</a></li>
+							<li>En Linux: la consola</li>
 						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
+						<h2>Sistema de archivos de una computadora</h2>
+					</section>
+					<section>
+						<h2>Ayuda I</h2>
+						<p>man comando</p>
+					</section>
+					<section>
+						<h2>Listar archivos</h2>
+						<p>ls</p>
+					</section>
+					<section>
+						<h2>Donde estoy ubicada</h2>
+						<p>pwd</p>
+					</section>
+					<section>
+						<h2>Ubicarte en un directorio</h2>
+						<p>cd directorio</p>
+					</section>
+					<section>
+						<h2>Copiar archivos</h2>
+						<p>cp archivo_a_copiar</p>
+					</section>
+					<section>
+						<h2>Mover archivos</h2>
+						<p>mv archivo_a_mover</p>
+					</section>
+					<section>
+						<h2>Borrar archivos</h2>
+						<p>rm archivo_a_borrar</p>
+					</section>
+					<section>
+						<h2>Leer archivos de texto plano</h2>
+						<ol>
+							<li>less archivo_a_leer</li>
+							<li>more archivo_a_leer</li>
+							<li>tail archivo_a_leer</li>
+							<li>head archivo_a_leer</li>
+							<li>cat archivo_a_leer</li>
+						</ol>
+					</section>
+					<section>
+						<h2>En GIT</h2>
+						<ol>
+							<li>git clone</li>
+							<li>git init</li>
+							<li>git status</li>
+							<li>git diff</li>
+							<li>git log</li>
+							<li>git add archivo_a_agregar</li>
+							<li>git commit</li>
+							<li>git push</li>
+							<li>git pull</li>
+						</ol>
+						<a href="/github-git-cheat-sheet.pdf">GIT sheet</a>
 					</section>
 				</section>
 
 				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
+					<section>
+						<h2>Como configurar Git</h2>
+						<p>git config : permite obtener y establecer configuración para controlar el aspecto y funcionamiento de git. Cada repositorio tiene un archivo /.git/config que contiene configuración especifica del repsitorio.</li>
+						</p>
+					</section>
+					<section>
+						<h2>Identidad es usada cuando se hacen commits</h2>
+						<pre><code data-trim contenteditable>$ git config --global user.name "Tu nombre"</code></pre>
+						<pre><code data-trim contenteditable>$ git config --global user.email "Tu email"</code></pre>
+					</section>
+					<section>
+						<h2>Editor</h2>
+						<pre><code data-trim contenteditable>$ git config --global core.editor editor_preferido</code></pre>
+						editor_preferido: vim, emacs, atom, otro
+					</section>
+					<section>
+						<h2>Herramienta de diferencias</h2>
+						<pre><code data-trim contenteditable>$ git config --global merge.tool herramienta_de_diff</code></pre>
+						herramientas_de_diff: kdiff3, tkdiff, meld, xxdiff, emerge, vimdiff, gvimdiff, ecmerge, y opendiff, otro
+					</section>
+					<section>
+						<h2>Comprobando tu configuración</h2>
+						<pre><code data-trim contenteditable>git config --list</code></pre>
+					</section>
+					<section>
+						<h2>Ayuda II</h2>
+						<pre><code data-trim contenteditable>git help <command></code></pre>
+					</section>
 				</section>
 
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
+					<section>
+						<h2>Como configurar GitHub</h2>
+						<ol>
+							<li>Crear cuenta en GitHub.</li>
+<!-- 							<li>Crear ssh key y agregarlo a la cuenta en GitHub.</li> -->
+						</ol>
+					</section>
 				</section>
 
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
+					<section>
+						<h2>Como crear un repositorio</h2>
+					</section>
+					<section>
+						<h2>Iniciando uno localmente</h2>
+						<p>Ir al directorio del proyecto: cd directorio_path</p>
+						<p>Iniciar GIT: <pre><code data-trim contenteditable>git init</code></pre></p>
+						<p>Agregar archivos: <pre><code data-trim contenteditable>git add archivos_a_agregar</code></pre></p>
+						<p>Comitear: <pre><code data-trim contenteditable>git commit -m "Version inicial."</code></pre></p>
+					</section>
+					<section>
+						<h2>Agregandolo a github</h2>
+						<ol>
+							<li>Crear repositorio en github.</li>
+							<li>Agregar el remoto a el repositorio local: <pre><code data-trim contenteditable>git remote add github_url_para_repo</code></pre></li>
+							<li>Enviar cambios: <pre><code data-trim contenteditable>git push origin master</code></pre></li>
+						</ol>
+					</section>
 				</section>
 
 				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
+					<h2>Como clonar uno ya existente</h2>
+					<p><pre><code data-trim contenteditable>git clone github_url_para_repo</code></pre></p>
 				</section>
 
 				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
+					<h2>Como usar GitHub para colaborar</h2>
+					<ol>
+						<li>Fork los repositorios a colaborar.</li>
+						<li>Crear issues de nuevos requerimientos y bugs.</li>
+						<li>Crear Pull Requests con cambios que se pueden colaborar.</li>
+						<li>Hacer comentarios en issues y en documentos del repositorio a colaborar.</li>
+						<li>Se pueden crear organizaciones donde se tienen diferentes roles y todos en la organización tienen acceso a enviar cambios a los repositorios.</li>
+					</ol>
+				</section>
+
+				<section>
+					<section>
+						<h2>Como usar GitHub y GitHub Pages para publicar contenido</h2>
+						<p>Para tu cuenta u organización: username.github.io</p>
+						<p>Para tu repositorio: username.github.io/repositorio</p>
+						<p>Se puede agregar dominios y usar Jekyll para crear la web<p>
+					</section>
+					<section>
+						<h2>Para tu cuenta</h2>
+						<ol>Crear repositorio 'username.github.io' donde username es el nombre de tu cuenta</ol>
+						<ol>Clonar localmente</ol>
+						<ol>Crear index. $ echo "Hola Mundo!" > index.html</ol>
+						<ol>Enviar cambios a github.
+								git add --all
+								git commit -m "Commit inicial"
+								git push
+							</ol>
+						<ol>List. http://username.github.io</ol>
+					</section>
+					<section>
+						<h2>Para tu proyecto</h2>
+						<ol>
+							<li>Crear un repositorio.</li>
+							<li>Ir a settings/seccion github pages y clickear en 'Automatic Page Generator'</li>
+							<li>Agregar contenido</li>
+							<li>Elegir un theme y cliquear en el botón 'Publish'</li>
+							<li>Pronto en username.github.io/repositorio
+						</ol>
+					</section>
+				</section>
+
+				<section>
+					<h2>Tutoriales y Referencias en linea</h2>
+					<ol>
+						<li>Libro <a href="http://git-scm.com/book/es/">Pro GIT</a>.</li>
+						<li>Ayuda de <a href="https://help.github.com/">GitHub</a>(en ingles).</li>
+						<li>GitHub para <a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1">iniciados</a>(en ingles).</li>
+						<li>GitHub para <a href="http://dannguyen.github.io/github-for-portfolios/">portfolios</a>(en ingles).</li>
+						<li>Generador de páginas webs y blogs con <a href="http://jekyllrb.com/">Jekyll</a></li>
+						<li>Herramienta para <a href="https://github.com/schacon/git-scribe">escribir</a> libros y articulos con GIT. Git-Scribe</li>
+						<li>Esta presentación en <a href="https://github.com/gabelula/github-para-periodistas-presentacion">GitHub</a></li>
+					</ol>
+				</section>
+
+				<section>
+					<h1>¿Comentarios?</h1>
+					<h3>Por @gaba</h3>
 				</section>
 
 			</div>
@@ -367,8 +429,11 @@ function linkify( selector ) {
 			Reveal.initialize({
 				controls: true,
 				progress: true,
-				history: true,
 				center: true,
+				history: true,
+				keyboard: true,
+				touch: true,
+				hideAddressBar: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
