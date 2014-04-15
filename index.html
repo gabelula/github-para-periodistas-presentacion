@@ -140,13 +140,14 @@
 						<p></p>
 					</section>
 					<section>
-						<h2>Los tres estados</h2>
-						<p> Git tiene tres estados principales en los que se pueden encontrar tus archivos
+						<h2>Los tres estados de tu documento</h2>
+						<p> Git tiene tres estados principales en los que se puede encontrar tu documento
 							<ol>
-								<li>confirmado (committed)</li>
-								<li>modificado (modified)</li>
-								<li>preparado  (staged)</li>
-							</p>
+								<li>confirmado (committed) - ya esta dentro de la version actual</li>
+								<li>preparado  (staged) - estoy agregandolo a la siguiente version</li>
+								<li>modificado (modified) - lo estoy modificando</li>
+							</ol>
+						</p>
 					</section>
 					<aside class="notes">Confirmado significa que los datos están almacenados de manera segura en tu base de datos local.
 						Modificado significa que has modificado el archivo pero todavía no lo has confirmado a tu base de datos.
@@ -155,8 +156,8 @@
 						<h2>Las tres secciones principales para un proyecto en GIT</h2>
 							<ol>
 								<li>directorio de GIT</li>
-								<li>directorio de trabajo</li>
 								<li>área de preparación</li>
+								<li>directorio de trabajo</li>
 							</ol>
 						<img src="images/tres_estados.png" style="float:right;">
 					</section>
@@ -164,7 +165,11 @@
 
 Directorio de trabajo: es la copia de una versión del proyecto. Es la versión que se puede modificar o usar.
 
-Área de preparación: es un archivo que almacena información de lo que va a ir en la próxima confirmación.</aside>
+Área de preparación: es un archivo que almacena información de lo que va a ir en la próxima confirmación.
+
+Ejemplo con un periodista usando github para colaborar en varios articulos. La version anterior no tiene tildes y el conjunto de cambios que voy a aplicar son agregar tildes.
+
+</aside>
 					<section>
 						<h2>Flujo de trabajo</h2>
 						<ol style="list-style-type: decimal;">
@@ -199,7 +204,7 @@ Directorio de trabajo: es la copia de una versión del proyecto. Es la versión 
 					<aside class="notes"></aside>
 					<section>
 						<h2>Branches</h2>
-						<p>Branches(ramas) permite hacer cambios y experimentar con tu repositorio sin afectar tu proyecto. Se pueden crear ramas de diferentes caminos que tu repositorio pueda tomar. Esas ramas se pueden unir en git luego si asi se quiere.</p>
+						<p>Branches (vias de tren) permite hacer cambios y experimentar con tu repositorio sin afectar tu proyecto. Se pueden crear diferentes caminos que tu repositorio pueda tomar. Estos caminos se pueden unir en git luego si asi se quiere.</p>
 					</section>
 					<aside class="notes"></aside>
 					<section>
@@ -226,7 +231,7 @@ Directorio de trabajo: es la copia de una versión del proyecto. Es la versión 
 						</p>
 						<ol>
 							<li>En Mac: application Terminal</li>
-							<li>En Windows: <a href="http://cygwin.com/install.html">instalar cygwin</a></li>
+							<li>En Windows: prompt</li>
 							<li>En Linux: la consola</li>
 						</ol>
 					</section>
