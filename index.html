@@ -236,7 +236,7 @@ Ejemplo con un periodista usando github para colaborar en varios articulos. La v
 						</p>
 						<ol>
 							<li>En Mac: application Terminal</li>
-							<li>En Windows: prompt</li>
+							<li>En Windows: prompt o cygwin</li>
 							<li>En Linux: la consola</li>
 						</ol>
 					</section>
@@ -261,11 +261,11 @@ Ejemplo con un periodista usando github para colaborar en varios articulos. La v
 					</section>
 					<section>
 						<h2>Copiar archivos</h2>
-						<p>cp archivo_a_copiar</p>
+						<p>cp archivo_a_copiar nuevo_archivo</p>
 					</section>
 					<section>
 						<h2>Mover archivos</h2>
-						<p>mv archivo_a_mover</p>
+						<p>mv archivo_a_mover nuevo_lugar</p>
 					</section>
 					<section>
 						<h2>Borrar archivos</h2>
@@ -385,15 +385,17 @@ Ejemplo con un periodista usando github para colaborar en varios articulos. La v
 					</section>
 					<section>
 						<h2>Para tu cuenta</h2>
-						<ol>Crear repositorio 'username.github.io' donde username es el nombre de tu cuenta</ol>
-						<ol>Clonar localmente</ol>
-						<ol>Crear index. $ echo "Hola Mundo!" > index.html</ol>
-						<ol>Enviar cambios a github.
-								git add --all
-								git commit -m "Commit inicial"
-								git push
-							</ol>
-						<ol>List. http://username.github.io</ol>
+						<ol>
+						<li>Crear repositorio 'username.github.io' donde username es el nombre de tu cuenta</li>
+						<li>Clonar localmente</li>
+						<li>Crear index. $ echo "Hola Mundo!" > index.html</li>
+						<li>Enviar cambios a github.
+								<pre><code data-trim contenteditable>git add --all</code></pre>
+								<pre><code data-trim contenteditable>git commit -m "Commit inicial"</code></pre>
+								<pre><code data-trim contenteditable>git push</code></pre>
+							</li>
+						<li>Ir a http://username.github.io</li>
+					</ol>
 					</section>
 					<section>
 						<h2>Para tu proyecto</h2>
