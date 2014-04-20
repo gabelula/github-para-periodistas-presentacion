@@ -109,6 +109,9 @@
 					<aside class="notes">Para periodistas, Github es un lugar donde guardar datos, mapas y código que puedan generar para sus propios proyectos. También es un lugar donde se puede colaborar con otros periodistas y/o programadores.</aside>
 					<section>
 						<h2>VozData en La Nacion</h2>
+					</section>
+					<section>
+						<h3>VozData en La Nacion</h3>
 						<ol>
 							<li>potencio la colaboración entre programadores</li>
 							<li>llevo control de los nuevos requerimientos y bugs</li>
@@ -145,46 +148,6 @@
 						<p></p>
 					</section>
 					<section>
-						<h2>Los tres estados de tu documento</h2>
-						<p> Git tiene tres estados principales en los que se puede encontrar tu documento
-							<ol>
-								<li>confirmado (committed) - ya esta dentro de la version actual</li>
-								<li>preparado  (staged) - estoy agregandolo a la siguiente version</li>
-								<li>modificado (modified) - lo estoy modificando</li>
-							</ol>
-						</p>
-					</section>
-					<aside class="notes">Confirmado significa que los datos están almacenados de manera segura en tu base de datos local.
-						Modificado significa que has modificado el archivo pero todavía no lo has confirmado a tu base de datos.
-						Preparado significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima confirmación.</aside>
-					<section>
-						<h2>Las tres secciones principales para un proyecto en GIT</h2>
-							<ol>
-								<li>directorio de GIT</li>
-								<li>área de preparación</li>
-								<li>directorio de trabajo</li>
-							</ol>
-						<img src="images/tres_estados.png" style="float:right;">
-					</section>
-					<aside class="notes">Directorio de Git: es donde git almacena los metadatos y la base de datos de objectos del proyecto.
-
-Directorio de trabajo: es la copia de una versión del proyecto. Es la versión que se puede modificar o usar.
-
-Área de preparación: es un archivo que almacena información de lo que va a ir en la próxima confirmación.
-
-Ejemplo con un periodista usando github para colaborar en varios articulos. La version anterior no tiene tildes y el conjunto de cambios que voy a aplicar son agregar tildes.
-
-</aside>
-					<section>
-						<h2>Flujo de trabajo</h2>
-						<ol style="list-style-type: decimal;">
-							<li>Se modifica archivos en tu directorio de trabajo.</li>
-							<li>Se añaden los archivos al área de preparación.</li>
-							<li>Se confirman los cambios, que lo que hace es tomar los archivos del área de preparación y los almacena de forma permanente en el directorio de Git.</li>
-						</ol>
-					</section>
-					<aside class="notes"></aside>
-					<section>
 						<h2>Repositorio</h2>
 						<p>Se le llama al conjunto/sistema de archivos que se estan guardando en el proyecto.</p>
 					</section>
@@ -217,6 +180,46 @@ Ejemplo con un periodista usando github para colaborar en varios articulos. La v
 						<p>Se usa en GitHub para hacer pedidos a un proyecto forkeado de que una los cambios que hiciste en tu repositorio.</p>
 					</section>
 					<aside class="notes">Explicar mostrando interface en github.</aside>
+					<section>
+						<h2>Los tres estados de tu documento</h2>
+						<p> Git tiene tres estados principales en los que se puede encontrar tu documento
+							<ol>
+								<li>confirmado (committed) - ya esta dentro de la version actual</li>
+								<li>preparado  (staged) - estoy agregandolo a la siguiente version</li>
+								<li>modificado (modified) - lo estoy modificando</li>
+							</ol>
+						</p>
+					</section>
+					<aside class="notes">Confirmado significa que los datos están almacenados de manera segura en tu base de datos local.
+						Modificado significa que has modificado el archivo pero todavía no lo has confirmado a tu base de datos.
+						Preparado significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima confirmación.</aside>
+					<section>
+						<h2>Las tres secciones principales para un proyecto en GIT</h2>
+							<ol>
+								<li>directorio de GIT</li>
+								<li>área de preparación</li>
+								<li>directorio de trabajo</li>
+							</ol>
+						<img src="images/tres_estados.png" style="float:right;">
+					</section>
+					<aside class="notes">Directorio de Git: es donde git almacena los metadatos y la base de datos de objectos del proyecto.
+
+Directorio de trabajo: es la copia de una versión del proyecto. Es la versión que se puede modificar o usar.
+
+Área de preparación: es un archivo que almacena información de lo que va a ir en la próxima confirmación.
+
+Ejemplo con un periodista usando github para colaborar en varios articulos. La version anterior no tiene tildes y el conjunto de cambios que voy a aplicar son agregar tildes.
+
+					</aside>
+					<section>
+						<h2>Flujo de trabajo</h2>
+						<ol style="list-style-type: decimal;">
+							<li>Se modifica archivos en tu directorio de trabajo.</li>
+							<li>Se añaden los archivos al área de preparación.</li>
+							<li>Se confirman los cambios, que lo que hace es tomar los archivos del área de preparación y los almacena de forma permanente en el directorio de Git.</li>
+						</ol>
+					</section>
+					<aside class="notes"></aside>
 				</section>
 
 				<section>
@@ -241,44 +244,16 @@ Ejemplo con un periodista usando github para colaborar en varios articulos. La v
 						</ol>
 					</section>
 					<section>
-						<h2>Sistema de archivos de una computadora</h2>
-					</section>
-					<section>
-						<h2>Ayuda I</h2>
-						<p>man comando</p>
-					</section>
-					<section>
-						<h2>Listar archivos</h2>
-						<p>ls</p>
-					</section>
-					<section>
-						<h2>Donde estoy ubicada</h2>
-						<p>pwd</p>
-					</section>
-					<section>
-						<h2>Ubicarte en un directorio</h2>
-						<p>cd directorio</p>
-					</section>
-					<section>
-						<h2>Copiar archivos</h2>
-						<p>cp archivo_a_copiar nuevo_archivo</p>
-					</section>
-					<section>
-						<h2>Mover archivos</h2>
-						<p>mv archivo_a_mover nuevo_lugar</p>
-					</section>
-					<section>
-						<h2>Borrar archivos</h2>
-						<p>rm archivo_a_borrar</p>
-					</section>
-					<section>
-						<h2>Leer archivos de texto plano</h2>
+						<h2>Algunos comandos</h2>
 						<ol>
+							<li>man comando - help comando</li>
+							<li>ls - dir</li>
+							<li>pwd - cd</li>
+							<li>cd directorio</li>
+							<li>cp archivo_a_copiar nuevo_archivo</li>
+							<li>mv archivo_a_mover nuevo_lugar</li>
+							<li>rm archivo_a_borrar</li>
 							<li>less archivo_a_leer</li>
-							<li>more archivo_a_leer</li>
-							<li>tail archivo_a_leer</li>
-							<li>head archivo_a_leer</li>
-							<li>cat archivo_a_leer</li>
 						</ol>
 					</section>
 					<section>
@@ -293,39 +268,9 @@ Ejemplo con un periodista usando github para colaborar en varios articulos. La v
 							<li>git commit</li>
 							<li>git push</li>
 							<li>git pull</li>
+							<li>git help</li>
 						</ol>
-						<a href="/github-git-cheat-sheet.pdf">GIT sheet</a>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h2>Como configurar Git</h2>
-						<p>git config : permite obtener y establecer configuración para controlar el aspecto y funcionamiento de git. Cada repositorio tiene un archivo /.git/config que contiene configuración especifica del repsitorio.</li>
-						</p>
-					</section>
-					<section>
-						<h2>Identidad es usada cuando se hacen commits</h2>
-						<pre><code data-trim contenteditable>$ git config --global user.name "Tu nombre"</code></pre>
-						<pre><code data-trim contenteditable>$ git config --global user.email "Tu email"</code></pre>
-					</section>
-					<section>
-						<h2>Editor</h2>
-						<pre><code data-trim contenteditable>$ git config --global core.editor editor_preferido</code></pre>
-						editor_preferido: vim, emacs, atom, otro
-					</section>
-					<section>
-						<h2>Herramienta de diferencias</h2>
-						<pre><code data-trim contenteditable>$ git config --global merge.tool herramienta_de_diff</code></pre>
-						herramientas_de_diff: kdiff3, tkdiff, meld, xxdiff, emerge, vimdiff, gvimdiff, ecmerge, y opendiff, otro
-					</section>
-					<section>
-						<h2>Comprobando tu configuración</h2>
-						<pre><code data-trim contenteditable>git config --list</code></pre>
-					</section>
-					<section>
-						<h2>Ayuda II</h2>
-						<pre><code data-trim contenteditable>git help <command></code></pre>
+						<a href="github-git-cheat-sheet.pdf">GIT sheet</a>
 					</section>
 				</section>
 
@@ -334,7 +279,6 @@ Ejemplo con un periodista usando github para colaborar en varios articulos. La v
 						<h2>Como configurar GitHub</h2>
 						<ol>
 							<li>Crear cuenta en GitHub.</li>
-<!-- 							<li>Crear ssh key y agregarlo a la cuenta en GitHub.</li> -->
 						</ol>
 					</section>
 				</section>
